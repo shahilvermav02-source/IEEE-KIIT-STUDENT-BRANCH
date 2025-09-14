@@ -5,23 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>IEEE KIIT Student Chapter</title>
 
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <!-- site styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <!-- left: just the KIIT logo, bigger and crisp -->
+      <!-- left: KIIT logo (only) -->
       <div class="logo-left">
         <div class="logo-frame">
           <img id="kiitLogo" src="assets/kiitlogo.png" alt="KIIT Logo" />
         </div>
       </div>
 
-      <!-- nav (hidden on small screens) -->
+      <!-- main nav -->
       <nav class="nav" id="mainNav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#events">Events</a>
@@ -32,7 +33,7 @@
 
       <!-- right: socials + IEEE logo -->
       <div class="right-block">
-        <div class="socials" aria-hidden="false">
+        <div class="socials" aria-label="Social links">
           <a class="social" href="https://www.instagram.com/ieee_cs_kiit/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a class="social" href="https://www.linkedin.com/in/ieee-cs-kiit/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a class="social" href="https://www.facebook.com/ieee.cs.kiit" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -47,15 +48,16 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- MAIN -->
   <main>
+    <!-- HERO -->
     <section class="hero container">
       <span class="eyebrow">IEEE @ KIIT</span>
       <h1 class="hero-title">Build. Learn. Lead.</h1>
       <p class="hero-desc">IEEE Computer Society Student Chapter at KIIT — workshops, hackathons, speaker sessions and student projects to build skills and portfolios.</p>
     </section>
 
-    <!-- Achyuta Samanta -->
+    <!-- Achyuta Samanta section -->
     <section class="samanta container" id="achyuta">
       <div class="samanta-text">
         <h2>Achyuta Samanta</h2>
@@ -69,19 +71,19 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- About -->
     <section id="about" class="section container">
       <h2>About</h2>
       <p>The IEEE Computer Society Student Chapter at KIIT connects students with practical workshops, technical talks, hackathons and project mentoring.</p>
     </section>
 
-    <!-- EVENTS (empty heading as requested) -->
+    <!-- Events (empty content) -->
     <section id="events" class="section container events-section">
       <h2>Upcoming event</h2>
-      <!-- intentionally left blank for you to fill -->
+      <!-- intentionally empty for you to fill -->
     </section>
 
-    <!-- MEMBERSHIP -->
+    <!-- Membership -->
     <section id="membership" class="section container">
       <h2>Membership</h2>
       <div class="members-card">
@@ -101,18 +103,18 @@
       </div>
     </section>
 
-    <!-- TEAM (placeholder) -->
+    <!-- Team (placeholder grid) -->
     <section id="team" class="section container">
-      <h2>Founding Member</h2>
+      <h2>Core Team</h2>
       <div class="team-grid">
-        <div class="member"><div class="avatar"><img src="assets/member-1.jpg" alt=""></div><div class="m-name">Member Name</div></div>
-        <div class="member"><div class="avatar"><img src="assets/member-2.jpg" alt=""></div><div class="m-name">Member Name</div></div>
-        <div class="member"><div class="avatar"><img src="assets/member-3.jpg" alt=""></div><div class="m-name">Member Name</div></div>
-        <div class="member"><div class="avatar"><img src="assets/member-4.jpg" alt=""></div><div class="m-name">Member Name</div></div>
+        <div class="member"><div class="avatar"><img src="assets/member-1.jpg" alt="Member"></div><div class="m-name">Member Name</div></div>
+        <div class="member"><div class="avatar"><img src="assets/member-2.jpg" alt="Member"></div><div class="m-name">Member Name</div></div>
+        <div class="member"><div class="avatar"><img src="assets/member-3.jpg" alt="Member"></div><div class="m-name">Member Name</div></div>
+        <div class="member"><div class="avatar"><img src="assets/member-4.jpg" alt="Member"></div><div class="m-name">Member Name</div></div>
       </div>
     </section>
 
-    <!-- JOIN -->
+    <!-- Join / Apply CTA -->
     <section id="join" class="join-section">
       <div class="container join-grid">
         <div class="join-card">
@@ -120,7 +122,7 @@
           <p>Join the IEEE KIIT Student Chapter to access events, mentorship and projects.</p>
           <div class="join-buttons">
             <a href="#" class="apply">Apply Now</a>
-            <a href="#" class="contact">Contact Us</a>
+            <a href="#contact" class="contact btn-kiit">Contact Us</a>
           </div>
         </div>
       </div>

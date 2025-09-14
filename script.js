@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // set footer year
+  // set current year in footer
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -9,11 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (menuBtn && nav) {
     menuBtn.addEventListener("click", () => {
       nav.classList.toggle("nav-open");
-      // simple mobile behavior: if nav-open, show as column (CSS can handle it if needed)
     });
   }
 
-  // Try to swap to hi-res KIIT logo if @2x exists (non-blocking)
+  // Try to replace KIIT logo with @2x if available for sharpness on high DPI
   const kiitImg = document.getElementById("kiitLogo");
   if (kiitImg) {
     const try2x = new Image();
